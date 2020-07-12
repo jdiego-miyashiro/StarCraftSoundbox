@@ -10,11 +10,23 @@ h1 {
   margin: 50px 50px;
 }
 footer{
+  color: #DBEDF3;
+  font-family: sans-serif;
   text-align: center;
   margin-left: 30%;
   margin-right: 30%;
-  margin-top: 10%;
-
+  margin-top: 5%;
+}
+.airbound-wrapper{
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  text-align: center;
+}
+.game-over {
+  background-color: red;
+  opacity: 0.8;
 }
 .icon {
   height: auto;
@@ -45,10 +57,9 @@ footer{
 }
 
 .logo-container{
-  margin-top: 20px
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;}
 
-}
 .navbar-custom{
   color: #a3b8cc;
   background-color: #001a34;
@@ -63,19 +74,6 @@ footer{
 }
 .navbar-text{
 color: #a3b8cc;}
-.SubTittle {
-
-  font-size: 1.20rem;
-  color: #DBEDF3;
-  font-family: "Arvo", cursive;
-  margin-top: 45px;
-  margin-bottom: 15px;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 45px;
-
-
-}
 
 .navbar-nav.navbar-center {
             position: absolute;
@@ -85,16 +83,21 @@ color: #a3b8cc;}
 .nav-link{
   color: #a3b8cc;
 }
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
-  margin-top: 5%;
-}
 
 .navbar-nav{
   text-align: center;
 }
 
+.SubTittle {
+  font-size: 1.20rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
 .unit-portrait {
   text-align: center;
   outline: none;
@@ -111,31 +114,12 @@ footer {
   margin-top: 10px;
   margin-bottom:10px;
 }
-
-
-.unit-portrait:hover{
-
-  border: 4px solid #003467;
-  -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
-  -box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
-
+.red {
+  color: red;
 }
 .row{
   margin-top: 20px;
   margin-bottom:20px;
-}
-.container{
-  text-align: center;
-}
-
-.set {
-  margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
 }
 
 .pressed {
@@ -143,14 +127,18 @@ footer {
   opacity: 0.5;
 }
 
-.red {
-  color: red;
+
+.set {
+  margin: 10% auto;
 }
 
-.airbound-wrapper{
-  justify-content: center;
-  align-items: center;
+.unit-portrait:hover{
+  border: 4px solid #003467;
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  -box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
+
 .wrapper{
   display: flex;
   overflow: auto;

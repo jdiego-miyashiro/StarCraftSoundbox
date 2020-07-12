@@ -16,14 +16,13 @@ $.get("https://srv-file14.gofile.io/download/aQ6ID3/AudioNameList.txt", function
       SCVAudio.play();
     });
 
-    document.querySelectorAll(".unit-portrait")[i].addEventListener("mouseover", function() {
+  /*  document.querySelectorAll(".unit-portrait")[i].addEventListener("mouseover", function() {
     this.style.backgroundImage ="url(images/"+this.getAttribute("value")+".gif)"
     });
-
     document.querySelectorAll(".unit-portrait")[i].addEventListener("mouseout", function() {
       this.style.backgroundImage ="url(images/"+this.getAttribute("value")+".jpg)"
     });
-
+*/
     function SelectAudio(ArrayofAudioNames, UnitNameString){
       var SelectedAudioArrays =[];
       for (var i = 0; i < ArrayofAudioNames.length; i++){
@@ -34,19 +33,17 @@ $.get("https://srv-file14.gofile.io/download/aQ6ID3/AudioNameList.txt", function
       return SelectedAudioArrays[j];
     }
 
-
-
-
-
   }
 
 $(document).ready(function(){
   $(".unit-portrait").hover(
     function(){
+    $(this).css('background-image',"url(images/"+$(this).attr("value")+".gif)")
     $(this).animate({
       marginTop: "-=1%",},200);
     },
     function(){
+      $(this).css('background-image',"url(images/"+$(this).attr("value")+".jpg)")
       $(this).animate({
         marginTop:"0%"
       },200);
